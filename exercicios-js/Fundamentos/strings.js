@@ -11,3 +11,4 @@ console.log('Escola '.concat(escola).concat("!"));; // concat une strings;
 console.log(escola.replace(3, 'e')); // replace substitui uma string por outra;
 
 console.log("Maria, Ana, Lucas, Pedro".split(",")); // split transforma uma string em array separado por virgula;
+
