@@ -29,25 +29,23 @@
 
 let lists = [[1,4,5],[1,3,4],[2,6]];
 
-const output = () => {
+const arraySorted = (lista) => {
     let numbers = [];
-    if (lists.length === 0) {
-        console.log(lists)
+    if (lista.length === 0) {
+        return lista
+    } 
+    if (lista.length === 1) {
+        return []
     }
-    if (lists.length === 1) {
-        console.log([])
-    }
-    if (lists.length > 1) {
-        for (const array of lists) {
+    if (lista.length > 1) {
+        for (const array of lista) {
             for (let index = 0; index < array.length; index++) {
                 let list = array[index]
                 numbers.push(list);
             }
         }
-
     }
-    console.log(numbers.sort());
-    return
+    return numbers.sort()
 }
 
-output();
+console.log(arraySorted(lists));
